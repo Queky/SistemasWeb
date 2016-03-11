@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            header {
+                text-align: center;
+            }
+
+            div#menuHorizontal {
+                text-align: center;
+            }
+
+            ul#menu li {
+                display: inline;
+            }
+        </style>
+        <title>Curriculum de Iñaki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>¿Tienes alguna pregunta?</h1>
+            <h2>¡Ponte en contacto conmigo!</h2>
+        </header>
+        <section>
+            <div id="menuHorizontal">
+                <ul id="menu">
+                    <li><a href="PaginaInicio.html">Inicio</a></li>
+                    <li><a href="Informacion.html">Informacion</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+              <!--
+                Creo un formulario para recoger la informacion que quiere mandar
+                el usuario. Ademas, hacemos que se mande todo con el input de tipo
+                submit.
+              -->
+              <form action="#" style="text-align: center" method="post">
+                <table align="center" style="text-align: right">
+                  <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" id="nombreUsuario" name="nombreUsuario" /></td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="correoUsuario" name="correoUsuario" /></td>
+                  </tr>
+                  <tr>
+                    <td>Motivo de contacto:</td>
+                    <td><input type="text" id="motivoContacto" name="motivoContacto" /></td>
+                  </tr>
+                  <tr>
+                    <td>Añade tu comentario:</td>
+                    <td><textarea rows="4" cols="18" style="resize: none"></textarea></td>
+                  </tr>
+                </table>
+                <input type="submit" value="Enviar" id="btnEnviar" name="btnEnbiar" />
+              </form>
+            </div>
+        </section>
+        <footer style="text-align: center">
+            <p>¡Gracias por tu opinion!</p>
+        </footer>
+    </body>
+</html>

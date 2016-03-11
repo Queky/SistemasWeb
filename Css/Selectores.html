@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Estilo.css" >
+    <title>Selectores</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <a href="PaginaInicio.html" ><p>Tutorial CSS3</p></a>
+      </div>
+      <div class="right">
+        <p>Iñaki Sánchez</p>
+      </div>
+    </header>
+  <section>
+    <div>
+      <h1>Selectores</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a href="PaginaInicio.html">Inicio</a></li>
+            <li><a href="Selectores.html">Selectores</a></li>
+            <li><a href="Tags.html">Tags</a></li>
+            <li><a href="Jerarquia.html">Jerarquia de estilos</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <div id="parrafo">
+      <h2 style="text-align: center"><u>Selectores de tipo</u></h2>
+      <p>
+        Selecciona todos los elementos de la pagina cuya etiqueta HTML coincide
+        con el valor del selector. El siguiente ejemplo selecciona todos los
+        parrafos de la pagina:
+        </p>
+        <p style="color: #ffffff">p {</p>
+        <p>...</p>
+        <p style="color: #ffffff">}</p>
+      <p>
+        Para utilizar este selector, solamente es necesario indicar el nombre de
+        una etiqueta HTML (sin los caracteres < y >) correspondiente a los
+        elementos que se quieren seleccionar.
+      </p>
+      <p>
+        El siguiente ejemplo aplica diferentes estilos a los titulares y a los
+        parrafos de una pagina HTML:
+        </p>
+        <p style="color: #ffffff">h1 {</p>
+          <p style="color: #ff0000">color: red;</p>
+        <p style="color: #ffffff">}</p>
+        <p style="color: #ffffff">h2 {</p>
+        <p style="color: #002dcf">color: blue;</p>
+        <p style="color: #ffffff">}</p>
+        <p style="color: #ffffff">p {</p>
+        <p style="color: #000000">color: black;</p>
+        <p style="color: #ffffff">}</p>
+      <p>
+        Si se quiere aplicar los mismos estilos a dos etiquetas diferentes, se
+        pueden encadenar los selectores. Para ello, CSS permite agrupar todas las
+        reglas individuales  en una sola regla con un selector multiple. Para
+        ello, se incluyen todos los selectores separados por una coma:
+        </p>
+        <p style="color: #ffffff">h1, h2, h3 {</p>
+        <p style="color: #484b06">color: #484b06;</p>
+        <p>font-weight: normal;</p>
+        <p style="font-family: sans-seriff">font-family: Arial, Helvetica, sans-seriff;</p>
+        <p style="color: #ffffff">}</p>
+      <h2 style="text-align: center"><u>Selectores de clase</u></h2>
+        <p>
+          Una de las soluciones más sencillas para aplicar estilos a un solo
+          elemento de la página consiste en utilizar el atributo class de HTML
+          sobre ese elemento para indicar directamente la regla CSS que se le
+          debe aplicar:
+          <div style="color: #ffffff">
+          <p><<span>body</span>></p>
+            <p><<span>p class="destacado">Lorem ipsum dolor sit amet...</span><<span>/p</span>></p>
+            <p><<span>p> Nunc sed lacus et est adipiscing accumsan...</span><<span>/p</span>>
+            <p><<span>p>Class aptent taciti sociosqu ad litora...</span><<span>/p</span>>
+          <p><<span>/body></span></p>
+        </div>
+          <p>
+            A continuación, se crea en el archivo CSS una nueva regla llamada
+            destacado con todos los estilos que se van a aplicar al elemento.
+            Para que el navegador no confunda este selector con los otros tipos
+            de selectores, se prefija el valor del atributo class con un punto
+            (.) tal y como muestra el siguiente ejemplo:
+          </p>
+          <div style="color: red">
+            <p>.destacado { color: red; }</p>
+          </div>
+          <p>
+            El selector .destacado se interpreta como "cualquier elemento de la
+            página cuyo atributo class sea igual a destacado", por lo que solamente
+            el primer párrafo cumple esa condición.
+          </p>
+          <p>
+            Este tipo de selectores se llaman selectores de clase y son los más
+            utilizados junto con los selectores de ID que se verán a continuación.
+            La principal característica de este selector es que en una misma página
+            HTML varios elementos diferentes pueden utilizar el mismo valor en
+            el atributo class:
+          </p>
+          <div style="color: white">
+          <p><<span>body></span></p>
+            <p style="display: inline"><<span>p class="destacado"><p style="display: inline; color: red;">Lorem ipsum dolor sit amet...</p></span><<span>/p</span>></p>
+            <p style="display: inline"><<span>p>Nunc sed lacus et </span><<span>a href="#" class="destacado"><p style="color: red; display: inline;">est adipiscing</p></span><<span>/a> accumsan...</span><<span>/p</span>></p>
+            <p><<span>p>Class aptent taciti </span><<span>em class="destacado">sociosqu ad</span><<span>/em> litora...</span><<span>/p</span>></p>
+          <p><<span>/body</span>></p>
+        </div>
+          <p>
+            Los selectores de clase son imprescindibles para diseñar páginas web
+            complejas, ya que permiten disponer de una precisión total al seleccionar
+            los elementos. Además, estos selectores permiten reutilizar los mismos
+            estilos para varios elementos diferentes.
+          </p>
+          <h2 style="text-align: center"><u>Selectores de ID</u></h2>
+          <p>
+          En ocasiones, es necesario aplicar estilos CSS a un único elemento de
+          la página. Aunque puede utilizarse un selector de clase para aplicar
+          estilos a un único elemento, existe otro selector más eficiente en este
+          caso.
+        </p>
+        <p>
+          El selector de ID permite seleccionar un elemento de la página a través
+          del valor de su atributo id. Este tipo de selectores sólo seleccionan un
+          elemento de la página porque el valor del atributo id no se puede repetir
+          en dos elementos diferentes de una misma página.
+        </p>
+        <p>
+          La sintaxis de los selectores de ID es muy parecida a la de los selectores
+          de clase, salvo que se utiliza el símbolo de la almohadilla (#) en vez
+          del punto (.) como prefijo del nombre de la regla CSS:
+        </p>
+        <p style="color:red">
+          #destacado { color: red; }
+        </p>
+        <div style="color: white">
+        <p><<span>p>Primer párrafo</span><<span>/p</span>></p>
+        <p style="display: inline"><<span>p id="destacado"><p style="color: red; display: inline;">Segundo párrafo</p></span><<span>/p</span>></p>
+        <<span>p>Tercer párrafo</span><<span>/p</span>>
+      </div>
+      <p>
+        En el ejemplo anterior, el selector #destacado solamente selecciona el segundo
+        párrafo (cuyo atributo id es igual a destacado).
+      </p>
+      <p>
+        La principal diferencia entre este tipo de selector y el selector de clase
+        tiene que ver con HTML y no con CSS. Como se sabe, en una misma página,
+        el valor del atributo id debe ser único, de forma que dos elementos diferentes
+        no pueden tener el mismo valor de id. Sin embargo, el atributo class no
+        es obligatorio que sea único, de forma que muchos elementos HTML diferentes
+        pueden compartir el mismo valor para su atributo class.
+      </p>
+      <p>
+        De esta forma, la recomendación general es la de utilizar el selector de
+        ID cuando se quiere aplicar un estilo a un solo elemento específico de la
+        página y utilizar el selector de clase cuando se quiere aplicar un estilo
+        a varios elementos diferentes de la página HTML.
+      </p>
+      <p>
+        Al igual que los selectores de clase, en este caso también se puede restringir
+        al alcance del selector mediante la combinación con otros selectores. El
+        siguiente ejemplo aplica la regla CSS solamente al elemento de tipo <<span>p></span>
+        que tenga un atributo id igual al indicado:
+      </p>
+      <p style="color: #0800aa">
+        p#aviso { color: blue; }
+      </p>
+      <p>
+        A primera vista, restringir el alcance de un selector de ID puede parecer
+        absurdo. En realidad, un selector de tipo p#aviso sólo tiene sentido cuando
+        el archivo CSS se aplica sobre muchas páginas HTML diferentes.
+      </p>
+      <p>
+        En este caso, algunas páginas pueden disponer de elementos con un atributo
+        id igual a aviso y que no sean párrafos, por lo que la regla anterior no
+        se aplica sobre esos elementos.
+      </p>
+    </div>
+  </section>
+  </body>
+</html>

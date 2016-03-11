@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Estilo.css" >
+    <title>Jerarquia de estilos</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <a href="PaginaInicio.html" ><p>Tutorial CSS3</p></a>
+      </div>
+      <div class="right">
+        <p>Iñaki Sánchez</p>
+      </div>
+    </header>
+  <section>
+    <div>
+      <h1>Jerarquia de estilos</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a href="PaginaInicio.html">Inicio</a></li>
+            <li><a href="Selectores.html">Selectores</a></li>
+            <li><a href="Tags.html">Tags</a></li>
+            <li><a href="Jerarquia.html">Jerarquia de estilos</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <div id="parrafo">
+      <p>
+        Las instrucciones de estilo procedentes de fuentes diversas se guardan
+        conforme a una jerarquía.
+      </p>
+      <p>
+        Puesto que las instrucciones de estilo se pueden vincular y combinar de
+        muchas maneras distintas, hay que determinar el procedimiento a seguir
+        en caso de producirse instrucciones contradictorias o conflictivas.
+      </p>
+      <h2 style="text-align: center"><u>Cascada</u></h2>
+      <p>
+        Se denomina cascada al sistema jerárquico que otorga a las instrucciones
+        de estilo de mayor o menor importancia en función de su procedencia. Es
+        un sistema de regulación para evitar incongruencias entre diferentes hojas
+        de estilo.
+      </p>
+      <p>
+        Cada navegador dispone de su propia hoja de estilo estándar (Browser-Style)
+        que es la que utiliza para representar las páginas HTML. El tipo de letra,
+        el color de fondo y el de la fuente, el color de los vínculos, el tamaño
+        de los títulos, etc., los formatea el navegador.
+      </p>
+      <p>
+        Los navegadores modernos permiten al usuario crear sus propias hojas de
+        estilo (hojas de estilo personalizadas, userstyles). El usuario puede, por
+        tanto, configurar sus preferencias en el navegador y sobrescribir con ellas
+        los ajustes de la hoja de estilo del navegador.
+      </p>
+      <p>
+        Las hojas de estilo creadas por nosotros, sobrescriben, por regla general,
+        diferentes instrucciones tanto del navegador como del usuario (siempre
+        que existan); las hojas de estilo se combinan. Si vincula varias hojas
+        de estilo de autor a su página, en caso de conflicto siempre serán las
+        instrucciones de la última hoja de estilo referenciada las que tengan
+        preferencia. Su hoja de estilo personalizada, esto es, la hoja de estilo
+        de autor, no puede ser sobrescrita por la del usuario, ya que la hoja de
+        estilo de autor tiene mayor prioridad.
+      </p>
+      <p>
+        Por otro lado, en el área <<span>head></span> del documento se pueden incluir
+        instrucciones de estilo definidas (incrustadas). Las instrucciones incrustadas
+        sobrescriben las instrucciones externas o importadas, pero sólo en el documento
+        actual (esto es, el documento en que están incrustadas las instrucciones).
+      </p>
+      <p>
+        Y por ultimo, enla etiqueta HTML también podrían aparecer directamente
+        (inline) instrucciones de estilo. Esas instrucciones tienen entonces prioridad
+        ante todas las demás instrucciones, aunque sólo en la instancia actual
+        (esto es, en la etiqueta HTML en que se han escrito las instrucciones).
+      </p>
+    </div>
+  </section>
+  </body>
+</html>
