@@ -1,0 +1,227 @@
+
+
+/* Elementos generales */
+
+*{ margin: 0; padding: 0; }*
+:focus, :active { outline: 0; }
+body { font: .9em  Sans-Serif; font-family: 'Ubuntu', sans-serif;  repeat-x; color: #333; }
+
+h1 {  float: left; margin: 20px 0 20px; font-size: 4em; color: black; }
+h2 { font-size: 2.4em; font-weight: normal; margin: 0 0 20px; font-family:'Ubuntu', sans-serif;, cursive;}
+h2 a:hover { background: #A82A15; color: #fff; }
+h3 { font-size: 1.5em; font-weight: normal; margin: 0 0 20px; font-family: 'Ubuntu', sans-serif;, cursive; }
+h4 { color: red; }
+.mayus { color: red; }
+
+#principal { float: left; width: 70%; margin: 0 0 15px; }
+p  { margin: 5px 0 15px; line-height: 1.6em; }
+#content { margin: 0 auto; width: 70%; }
+
+/* Separador */
+hr{ clear: both;
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    box-shadow: 0px -2px 4px rgba(136,136,136,0.75);
+}
+
+/* Top de la web */
+#top { float: right; margin: 38px 0 0 0; }
+#top li { list-style: none; display: inline; }
+#top li a { float: left; padding: 6px 20px; margin: 3px 2px 0 0; color: black; }
+#top li a.actual { color: #fff; background: black; }
+#top li a:hover { background: #808080; color: #fff; }
+
+/* Para indicar al usuario donde se encuentra */
+#navegador { border-radius: 69px 69px 69px 69px;
+-moz-border-radius: 69px 69px 69px 69px;
+-webkit-border-radius: 69px 69px 69px 69px;
+border: 0px solid #000000; 
+clear: both; padding: 15px 15px 15px 20px; border: 1px solid #dedede; background: #eee; margin: 10px 10px 10px 10px; }
+
+/*Copyright*/
+#footer { clear: both; padding: 15px 15px 15px 20px; border-top: 1px solid #ccc; margin: 10px 10px 10px 10px; }
+#r { float: right; }
+
+
+/*Carrito de la compra*/
+#carritoCompra { 
+  float: right; width: 25%;  
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  background-color: #FAFAFA;
+  padding: 15px 15px 15px 20px;
+}
+
+
+/*Formulario*/
+.contacto{
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+}
+.contacto label{ display: block; font-weight: bold; }
+.contacto div{ margin-bottom: 15px; }
+.contacto input[type='text'], .contacto textarea{
+    padding: 7px 6px;
+    width: 294px;
+    border: 1px solid #CED5D7;
+    resize: none;
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus {
+    outline: none;
+    box-shadow:0 0 0 3px #dde9ec;
+}
+.contacto input[type='submit']{
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+ 
+    background: #e4f1f6;
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
+}
+.contacto input[type='submit']:hover{
+    background: #edfcff;
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
+}
+.contacto input[type='submit']:active{
+    background: #cfe6ff;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+
+/* Links */
+.aux a {
+   text-decoration: none;
+}
+.aux a:link{
+   color: #00c;
+   border-bottom: 1px solid #00c;
+}
+.aux a:visited{
+   color: #6D006D;
+   border-bottom: 1px dashed #6D006D;
+}
+.aux a:focus{
+   color: #c00;
+   border-bottom: 1px dotted #c00;
+}
+.aux a:hover{
+   color: #c00;
+   border-bottom: 1px dashed #c00;
+}
+.aux a:active{
+   color: #c00;
+   border-bottom: 1px solid #c00;
+   font-style: italic;
+}
+a { color: #A82A15; text-decoration: none; }
+
+
+/* Estilo del boton extraido de css3 button maker*/
+
+input.comprar{
+  display: inline-block;
+  color: #666;
+  background-color: #eee;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-bottom-width: 3px;
+  position: absolute;        
+  right: 5px;
+  top: 80%;
+
+}
+  input.comprar:hover{
+    background-color: #e3e3e3;
+    border-color: rgba(0,0,0,0.5);
+  }
+  
+  input.comprar:active{
+    background-color: #CCC;
+    border-color: rgba(0,0,0,0.9);
+  }
+
+input.borrar, input.checkout , input.vaciar{
+   display: inline-block;
+  color: #666;
+  background-color: #eee;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-bottom-width: 3px;
+}
+  input.borrar:hover, input.checkout:hover, input.vaciar:hover{
+    background-color: #e3e3e3;
+    border-color: rgba(0,0,0,0.5);
+  }
+  
+  input.borrar:active, input.checkout:active, input.vaciar:active{
+    background-color: #CCC;
+    border-color: rgba(0,0,0,0.9);
+  }
+
+
+.cajaProducto{
+
+  float: left;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  width:30%;
+  display: inline-block;
+  position: relative;
+
+}
+
+.cajaProducto img { 
+  position: relative;
+  float:left;
+
+}
+
+#comprar{
+  float: left;
+}
+
+#espacio{
+  padding: 30px 30px 30px 30px; margin: 30px 30px 30px 30px;
+
+}
+
+
+.nombrePrecio{
+  width: 70%;
+  float: left;
+}
+
+
+/* Validacion formulario */
+
+.fallo{
+border:solid 1px red;
+background:#EFEFEF;
+color:#222222;
+padding:3px;
+margin: 3%;
+text-align:center;
+}

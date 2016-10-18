@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'enfermedades/style.css' %}" />
+<li>Hola a todos</li>
+{% if question_id %}
+    <ul>
+        {% for choice in question_id %}
+        <li>{{ choice }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
